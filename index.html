@@ -3,176 +3,413 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="A technical understanding about TCP/IP, the Client-Server model, and global internet infrastructure.">
-    <title>Technical Foundations of the Internet</title>
+    <meta name="description" content="Archive of Digital Evolution: A high-fidelity exploration into the origins, rivalries, and architecture of the global network.">
+    <meta property="og:title" content="ARCHIVE OF DIGITAL EVOLUTION">
+    <meta property="og:type" content="website">
+    <title>Archive of Digital Evolution</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400&family=Inter:wght@400;600&family=Playfair+Display:wght@700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
 </head>
-<body>
+<body role="document">
+    <main class="container" role="main">
 
-    <header>
-        <h1>Technical Foundations of the Internet</h1>
-        <p>This guide explores the underlying protocols, architectural components, and technical concepts that enable the global network of networks to function reliably.</p>
-    </header>
+        <div class="mesh-glow" aria-hidden="true"></div>
+        <header class="hero" role="banner" id="hero">
+            <span class="metadata accent-cyan " >ARCHIVE OF DIGITAL EVOLUTION</span>
+            <h1 class="hero-title">Internet <br> History</h1>
+            <p class="hero-subtitle"><em>A high-fidelity exploration into the origins, rivalries, and architecture of the global network.</em></p>
+        </header>
 
-    <hr>
-
-    <nav role="navigation" aria-label="Main Menu">
-        <h2>Table of Contents</h2>
-        <ol>
-            <li><a href="#core-protocols">Core Network Protocols</a></li>
-            <li><a href="#network-inquiry">Network Configuration Inquiry</a></li>
-            <li><a href="#infrastructure">Infrastructure Visualization</a></li>
-            <li><a href="#protocol-comparison">Protocol Stack Comparison</a></li>
-        </ol>
-    </nav>
-
-    <hr>
-
-    <main role="main">
-        <section id="core-protocols">
-            <h2>Core Network Protocols</h2>
-            <p>The Internet relies on a suite of communication protocols, primarily the Internet Protocol Suite (TCP/IP), to ensure data integrity and routing across diverse hardware.</p>
-            <p>Data transmission involves <strong>packet switching</strong> (breaking data into small chunks) and <em>routing</em> (finding the best path through nodes). Modern web browsing is facilitated by <u>HTTP/HTTPS</u>, which sits atop the transport layer.</p>
-
-            <h3>The Client-Server Model</h3>
-            <p>Most internet interactions follow a request-response pattern. Below are key components of the architectural hierarchy:</p>
-            
-            <ul>
-                <li>Application Layer (HTTP, FTP, SMTP)</li>
-                <li>Transport Layer: (TCP, UDP) 
-                    <ul>
-                        <li>TCP ensures reliable delivery via handshakes.</li>
-                    </ul>
-                </li>
+        <nav class="side-bullet-nav" aria-label="Quick Section Navigation">
+            <ul role="list">
+                <li><a href="#hero" title="Home"><span class="bullet"></span></a></li>
+                <li><a href="#foundations" title="Foundations"><span class="bullet"></span></a></li>
+                <li><a href="#switching" title="Packet Switching"><span class="bullet"></span></a></li>
+                <li><a href="#wars" title="The Browser Wars"><span class="bullet"></span></a></li>
+                <li><a href="#mobile" title="Mobile Web Revolution"><span class="bullet"></span></a></li>
+                <li><a href="#web2" title="Web 2.0 and Beyond"><span class="bullet"></span></a></li>
+                <li><a href="#visual-archive" title="Visual History Archive"><span class="bullet"></span></a></li>
+                <li><a href="#protocol-matrix" title="Protocol Matrix"><span class="bullet"></span></a></li>
             </ul>
+        </nav>
 
-            <blockquote>
-                "The Internet is a network of networks... its design is based on the idea of an open architecture where no single entity controls the whole." 
-                <cite>— Vint Cerf</cite>
-            </blockquote>
-
-            <p>A basic HTTP GET request header can be represented using the <code>&lt;header&gt;</code> tag or viewed in raw format using the <code>&lt;pre&gt;</code> tag:</p>
-    <pre>
-    GET /index.html HTTP/1.1
-    Host: www.example.org
-    Connection: keep-alive
-    Accept: text/html
-    User-Agent: Mozilla/5.0
-    </pre>
+        <section class="content-section">
+        <nav class="toc-card" role="navigation" aria-label="Table of Contents">
+            <div class="toc-header">
+                <h2><span class="material-icons-outlined accent-cyan">menu_book</span>
+                    Table of Contents</h2>
+            </div>
+            <div class="toc-grid">
+                <a href="#foundations" class="toc-item"><span class="material-icons-outlined">foundation</span> 01. Foundations and Milestones</a>
+                <a href="#switching" class="toc-item"><span class="material-icons-outlined">hub</span> 02. The Packet Switching Revolution</a>
+                <a href="#wars" class="toc-item"><span class="material-icons-outlined">open_in_new</span> 03. The Browser Wars & Standards</a>
+                <a href="#mobile" class="toc-item"><span class="material-icons-outlined">smartphone</span> 04. Mobile Web Revolution</a>
+                <a href="#web2" class="toc-item"><span class="material-icons-outlined">dynamic_form</span> 05. Web 2.0 and Beyond</a>
+                <a href="#visual-archive" class="toc-item"><span class="material-icons-outlined">perm_media</span> 06. Visual History Archive</a>
+                <a href="#protocol-matrix" class="toc-item"><span class="material-icons-outlined">grid_on</span> 07. Protocol Evolution Matrix</a>
+            </div>
+        </nav>
         </section>
 
-        <hr>
+        <section id="foundations" class="content-section">
+            <div class="section-title">
+                <h2><span class="material-icons-outlined accent-cyan">architecture</span>
+                    Foundations & Milestones</h2>
+            </div>
 
-        <section id="network-inquiry">
-            <h2>Network Configuration Inquiry</h2>
-            <p>Use this technical form to simulate a query for local network configuration and protocol preferences.</p>
+            <div class="glass-grid">
+                <article class="glass-card">
+                    <span class="material-icons-outlined accent-cyan">dns</span> <h3>ARPANET</h3>
+                    <p>The original packet-switching network funded by ARPA. The foundational ancestor of the modern Internet.</p>
+                </article>
+
+                <article class="glass-card">
+                    <span class="material-icons-outlined accent-cyan">language</span>
+                    <h3>The Web</h3>
+                    <p>Tim Berners-Lee's invention of HTML and HTTP at CERN. Developed on a NeXT Computer(the first web server) using the WorldWideWeb browser.</p>
+                </article>
+
+                <article class="glass-card">
+                    <span class="material-icons-outlined accent-cyan">settings_ethernet</span>
+                    <h3>TCP/IP</h3>
+                    <p>The robust protocol suite that standardized how data moves across heterogeneous networks.</p>
+                </article>
+            </div>
+            <p>The journey of the internet began in the late 1960s with the creation of <strong>ARPANET</strong>, funded by the U.S. Department of Defense. It was the first network to implement the protocol suite TCP/IP, laying the groundwork for everything we see today.</p>
             
-            <fieldset>
-                <legend>Network Node Details</legend>
-                <form>
-                    <p>
-                        <label for="hostname">Node Hostname:</label><br>
-                        <input type="text" id="hostname" name="hostname" placeholder="e.g., edge-server-01">
-                    </p>
-                    <p>
-                        <label for="last-update">Last System Update:</label><br>
-                        <input type="date" id="last-update" name="last-update">
-                    </p>
-                    <p>
-                        Primary Transport Protocol:<br>
-                        <input type="radio" id="tcp" name="protocol" value="TCP">
-                        <label for="tcp">TCP (Reliable)</label>
-                        <input type="radio" id="udp" name="protocol" value="UDP">
-                        <label for="udp">UDP (Speed)</label>
-                    </p>
-                    <p>
-                        <label for="topology">Network Topology:</label><br>
-                        <select id="topology" name="topology">
-                            <option value="star">Star Topology</option>
-                            <option value="mesh">Mesh Topology</option>
-                            <option value="hybrid">Hybrid/Cloud</option>
-                        </select>
-                    </p>
-                    <p>
-                        <input type="checkbox" id="encryption" name="encryption">
-                        <label for="encryption">I verify that the encryption keys are validated</label>
-                    </p>
-                    <button type="reset">Clear Buffer</button>
-                    <button type="submit">Send Request</button>
-                </form>
-            </fieldset>
+            <aside class="full-text-block">
+                <div class="dyk-content">
+                    <h4><span class="material-icons-outlined accent-gold">lightbulb</span>
+                        Did You Know?</h4>
+                    <em>The very first message sent over ARPANET was "LO". The system crashed as Charley Kline tried to type "LOGIN".</em>
+                </div>
+            </aside>
+
+            <p>This early network demonstrated that <span class="accent-cyan">packet switching</span> was more efficient than traditional circuit switching. It emphasized decentralized communication, ensuring that the network could survive even if parts of it were destroyed.</p>
         </section>
 
-        <hr>
+        <section id="switching" class="content-section">
+            <div class="section-title">
+                <h2><span class="material-icons-outlined accent-cyan">hub</span>
+                    The Packet Switching Revolution</h2>
+            </div>
 
-        <section id="infrastructure">
-            <h2>Infrastructure Visualization</h2>
-            <p>Visual aids representing the physical and logical layers of global connectivity.</p>
-
-            <h3>Data Center Architecture</h3>
-            <figure >
-                <img 
-                src="https://lh3.googleusercontent.com/aida-public/AB6AXuBhQI1XR3z3Li8papF18ZDvkoF5rOJs1HmLFuTSQvvsTeKtbrII7wzcr2dliWRlA9ECI6dfir4iN0vwfRVswSSzELqqKQDw44JLTowf67C-mlZyJIomw6MxNTFQtV78WcKKhW218KlZ358a6ozSGb_leV-O_U9pn_uQ-Znsux4Fa_EXErukFFh_9caUVmtJH1wiYpiWxCdmvJXIMg5NKYgvkbCICRIN1__0C8PMdlLyCYqoHLL_zJZE8r5_LcMaZmdcYCnnpj6HFZk" 
-                alt="Schematic representation of a high-density server rack within a Tier 4 data center" 
-                width="350">
-                <figcaption>
-                    <em>Figure 1: Schematic representation of a high-density server rack within a Tier 4 data center.</em>
-                </figcaption>
-            </figure>
-
-            <h3>Network Latency Simulation</h3>
-            <video controls width="350">
-                <source src="latency.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-            </video>
-            <p>The &lt;video&gt; element demonstrates how streaming protocols manage buffering and bitrate adaptation.</p>
-
-            <h3>Protocol Audio Signal</h3>
-            <audio controls>
-                <source src="signal.mp3" type="audio/mpeg">
-                Your browser does not support the audio element.
-            </audio>
+            <div class="split-content">
+                <div class="text-block">
+                    <p>In the early 1960s, independent of each other, <strong>Paul Baran</strong> in the US and Donald Davies in the UK developed the concept of distributed communications. Baran's work at the RAND Corporation envisioned a network that could survive a nuclear strike.</p>
+                    <p>Rather than a centralized exchange, Baran proposed breaking messages into small "blocks" (later called packets). This was radical: it meant no single point of failure and higher utilization of existing lines.</p>
+                </div>
+                
+                <aside class="visual-aside">
+                    <div class="glass-card">
+                        <svg viewBox="0 0 200 150" xmlns="http://www.w3.org/2000/svg" class="network-svg-small">
+                            <circle cx="100" cy="75" r="5" fill="#00D2FF" />
+                            <circle cx="50" cy="30" r="5" fill="#00D2FF" />
+                            <circle cx="150" cy="30" r="5" fill="#00D2FF" />
+                            <circle cx="50" cy="120" r="5" fill="#00D2FF" />
+                            <circle cx="150" cy="120" r="5" fill="#00D2FF" />
+                            <g stroke="#00D2FF" stroke-width="1" opacity="0.4">
+                                <line x1="100" y1="75" x2="50" y2="30" />
+                                <line x1="100" y1="75" x2="150" y2="30" />
+                                <line x1="100" y1="75" x2="50" y2="120" />
+                                <line x1="100" y1="75" x2="150" y2="120" />
+                                <line x1="50" y1="30" x2="150" y2="30" />
+                                <line x1="50" y1="120" x2="150" y2="120" />
+                            </g>
+                        </svg>
+                        <figcaption>Figure 2: Distributed Topology Visualization.</figcaption>
+                    </div>
+                </aside>
+            </div>
         </section>
 
-        <hr>
+        <section id="wars" class="content-section">
+            <div class="section-title">
+                <h2><span class="material-icons-outlined accent-cyan">open_in_new</span>
+                    The Browser Wars & Standards</h2>
+            </div>
 
-        <section id="protocol-comparison">
-            <h2>Protocol Stack Comparison</h2>
-            <table border="1">
-                <caption>OSI vs TCP/IP Mapping</caption>
-                <thead>
-                    <tr>
-                        <th scope="col">OSI Layer</th>
-                        <th scope="col">TCP/IP Layer</th>
-                        <th scope="col">Common Protocols</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Application</td>
-                        <td>Application</td>
-                        <td>HTTP, DNS, SSH</td>
-                    </tr>
-                    <tr>
-                        <td>Transport</td>
-                        <td>Transport</td>
-                        <td>TCP, UDP</td>
-                    </tr>
-                    <tr>
-                        <td>Network</td>
-                        <td>Internet</td>
-                        <td>IP, ICMP, ARP</td>
-                    </tr>
-                </tbody>
-            </table>
+            <div class="split-content">
+                <div class="text-block">
+                    <p>The mid-90s saw a fierce competition for dominance over how people accessed the web. <strong>Netscape Navigator</strong>, the early leader, faced a massive threat when Microsoft began bundling <strong>Internet Explorer</strong> with Windows.</p>
+                    <p>This "war" drove the rapid development of web standards. Features we take for granted today—like cookies, JavaScript, and CSS—were often weaponized to gain a competitive edge.</p>
+                    <div class="full-text-block">
+                        <em>"We are going to cut off their air supply. Everything they're selling, we're going to give away for free." 
+                        <footer>— Microsoft Executive on Netscape</footer>
+                        </em>
+                    </div>
+                </div>
+
+                <aside class="visual-aside">
+                    <div class="glass-card">
+                        <span class="material-icons-outlined large-icon">captive_portal</span>
+                        <img src="https://cdn.vectorstock.com/i/500p/27/93/globe-on-eclipse-background-original-vector-21602793.jpg" alt="Browser" width="100%">
+                        <h3>Legacy Interface Archive</h3>
+                        <p class="small-text">Visualizing the UI fragmentation of the 1990s.</p>
+                    </div>
+                </aside>
+            </div>
+
+            <div class="full-text-block">
+                <h3><span class="material-icons-outlined accent-cyan">gavel</span> The Standards Body Era & W3C</h3>
+                <p>As the conflict intensified, the web risked total fragmentation. The emergence of the World Wide Web Consortium (W3C) marked a turning point toward the "Standards Body Era." Before consensus was reached, proprietary extensions reigned supreme.</p>
+                <p>A prime example was scripting: Netscape's JavaScript and Microsoft's JScript. Developers were forced to write separate codebases until ECMAScript standardization brought harmony.</p>
+            </div>
         </section>
+
+        <section id="mobile" class="content-section">
+            <div class="section-title">
+                <h2><span class="material-icons-outlined accent-cyan">install_mobile</span>
+                    Mobile Web Revolution</h2>
+            </div>
+
+            <div class="split-content">
+                <div class="text-block">
+                    <p>The introduction of the <strong>iPhone in 2007</strong> and the subsequent rollout of <strong>4G networks</strong> fundamentally changed the Internet's traffic patterns. For the first time, users expected a desktop-class experience on a 3.5-inch screen.</p>
+                    <p>This shift led to the "Mobile First" design philosophy. It wasn't just about screen size; it was about context. Location-based services (GPS) and persistent connectivity birthed the App Economy, moving the web from a place you "go to" to a service that "follows you."</p>
+                </div>
+
+                <aside class="visual-aside">
+                    <div class="glass-card">
+                        <div class="icon-stack">
+                            <span class="material-icons-outlined large-icon">4g_mobiledata</span>
+                            <span class="material-icons-outlined large-icon">smartphone</span>
+                        </div>
+                        <h3>The "Full Web" in your pocket</h3>
+                        <p class="small-text">Before 2007, the mobile web was WAP—text-heavy and restricted. The iPhone introduced the Mobile Safari browser, forcing the web to become responsive.</p>
+                    </div>
+                </aside>
+            </div>
+
+            <div class="full-text-block">
+                <h3><span class="material-icons-outlined accent-cyan">aspect_ratio</span> The Rise of Responsive Design</h3>
+                <p>In 2010, Ethan Marcotte published a seminal article titled "Responsive Web Design." Before this, companies often maintained separate "m.sites"—entirely different websites for mobile users that were difficult to sync and maintain.</p>
+                <p>Marcotte's approach utilized fluid grids, flexible images, and media queries to create a unified codebase that adapted to any screen. This shift ended the era of device-specific forks and paved the way for the modern, accessible web we use today.</p>
+            </div>
+        </section>
+
+        <section id="web2" class="content-section">
+            <div class="section-title">
+                <h2><span class="material-icons-outlined accent-cyan">dynamic_form</span>
+                    Web 2.0 and Beyond</h2>
+            </div>
+
+            <div class="split-content">
+                <div class="text-block">
+                    <p>The early 2000s marked the transition from "Web 1.0"—a collection of static read-only pages—to <strong>Web 2.0</strong>, defined by interactivity and user-generated content. This wasn't a technical upgrade of the internet itself, but a shift in how it was used.</p>
+                    <p>Technologies like <strong>AJAX</strong> (Asynchronous JavaScript and XML) allowed pages to update without refreshing, enabling the rise of rich web applications and <strong>SaaS (Software as a Service)</strong>. Suddenly, the browser became a platform for complex tools, not just a document viewer.</p>
+                </div>
+
+                <aside class="visual-aside">
+                    <p>This era birthed the <strong>Social Media</strong> giants, turning every user into a creator. The web evolved into a global conversation redefining our daily digital interactions and the global economy.</p>
+                    <div class="full-text-block">
+                        <span class="accent-cyan">Core Drivers</span>
+                        <ul class="driver-list">
+                            <li>Dynamic content loading (AJAX)</li>
+                            <li>Social collaboration (Wikis, Blogs) </li>
+                            <li>Cloud-based infrastructure (AWS, Azure)</li>
+                        </ul>
+                    </div>
+                </aside>
+            </div>
+        </section>
+
+        <section id="visual-archive" class="content-section">
+            <div class="section-title">
+                <h2><span class="material-icons-outlined accent-cyan">camera</span>
+                    Visual History Archive</h2>
+            </div>
+
+            <div class="glass-card visual-card">
+                <div class="card-header">
+                    <span class="material-icons-outlined accent-cyan">schema</span>
+                    <span class="metadata">LOGICAL PLATE 04-B [CYAN SERIES]</span>
+                </div>
+                <h3>Early Infrastructure: ARPANET Logical Map</h3>
+                
+                <div class="svg-container">
+                    <svg viewBox="0 0 500 200" xmlns="http://www.w3.org/2000/svg" aria-labelledby="fig1-title">
+                        <title id="fig1-title">ARPANET Logical Map nodes</title>
+                        <g stroke="#00D2FF" stroke-width="1.5" opacity="0.4">
+                            <line x1="50" y1="100" x2="130" y2="50" />
+                            <line x1="130" y1="50" x2="210" y2="150" />
+                            <line x1="210" y1="150" x2="290" y2="100" />
+                            <line x1="290" y1="100" x2="370" y2="50" />
+                            <line x1="370" y1="50" x2="450" y2="100" />
+                        </g>
+                        <g fill="#00D2FF" class="nodes">
+                            <circle cx="50" cy="100" r="5" /> <text x="40" y="125" fill="#A0B0C0" font-family="Fira Code" font-size="10">UCLA</text>
+                            <circle cx="130" cy="50" r="5" /> <text x="120" y="35" fill="#A0B0C0" font-family="Fira Code" font-size="10">SRI</text>
+                            <circle cx="210" cy="150" r="5" /> <text x="200" y="175" fill="#A0B0C0" font-family="Fira Code" font-size="10">UCSB</text>
+                            <circle cx="290" cy="100" r="5" /> <text x="280" y="125" fill="#A0B0C0" font-family="Fira Code" font-size="10">UTAH</text>
+                            <circle cx="370" cy="50" r="5" /> <text x="360" y="35" fill="#A0B0C0" font-family="Fira Code" font-size="10">BBN</text>
+                            <circle cx="450" cy="100" r="5" /> <text x="440" y="125" fill="#A0B0C0" font-family="Fira Code" font-size="10">MIT</text>
+                        </g>
+                    </svg>
+                </div>
+                <figcaption>Figure 1: High-fidelity technical diagram of ARPANET nodes illustrating growth across US academic institutions.</figcaption>
+            </div>
+
+            <div class="media-grid">
+                <article class="glass-card media-card">
+                    <div class="card-header">
+                        <span class="material-icons-outlined accent-cyan">play_circle</span>
+                        <span class="metadata">1990 v.1.0</span>
+                    </div>
+                    <h3>Early Web Demonstrations</h3>
+                    <video 
+                        controls 
+                        width="100%" 
+                        poster="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/What_is_a_browser-.webm/960px--What_is_a_browser-.webm.jpg" 
+                        class="video-player">
+                        <source src="early-web-nav.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <p class="small-text">Restored footage from 1990 demonstrating the first browser navigation by Tim Berners-Lee.</p>
+                </article>
+
+                <article class="glass-card media-card">
+                    <div class="card-header">
+                        <span class="material-icons-outlined accent-cyan">audio_file</span>
+                        <span class="metadata">HANDSHAKE SIGNAL</span>
+                    </div>
+                    <h3>Historical Audio Archive</h3>
+                    <div class="audio-player">
+                        <span class="material-icons-outlined accent-cyan">graphic_eq</span>
+                        <audio controls>
+                            <source src="modem-handshake.mp3" type="audio/mpeg">
+                        </audio>
+                    </div>
+                    <p class="small-text">14.4k Baud Modem Recording, 1994 (0:14 / 0:45)</p>
+                </article>
+            </div>
+        </section>
+
+        <section id="protocol-matrix" class="content-section">
+            <div class="section-title">
+                <h2><span class="material-icons-outlined accent-cyan">table_chart</span>
+                    Protocol Evolution Matrix</h2>
+                <p>A technical timeline documenting the standardization and adoption cycles of core networking protocols.</p>
+            </div>
+            
+            <div class="table-container">
+                <table class="protocol-table">
+                    <thead>
+                        <tr>
+                            <th>Protocol</th>
+                            <th>Intro Year</th>
+                            <th>Adoption Trend</th>
+                            <th>Era Significance</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><span class="mono-text">TCP/IP</span></td>
+                            <td>1974</td>
+                            <td class="trend-cell">
+                                <svg class="sparkline" viewBox="0 0 100 20">
+                                    <path d="M0 18 L20 15 L40 10 L60 8 L80 5 L100 2" />
+                                </svg>
+                            </td>
+                            <td>The "Flag Day" Transition</td>
+                        </tr>
+                        <tr>
+                            <td><span class="mono-text">DNS</span></td>
+                            <td>1983</td>
+                            <td class="trend-cell">
+                                <svg class="sparkline" viewBox="0 0 100 20">
+                                    <path d="M0 18 L30 14 L50 8 L70 5 L100 2" />
+                                </svg>
+                            </td>
+                            <td>Addressing Scalability</td>
+                        </tr>
+                        <tr>
+                            <td><span class="mono-text">HTTP/1.1</span></td>
+                            <td>1997</td>
+                            <td class="trend-cell">
+                                <svg class="sparkline" viewBox="0 0 100 20">
+                                    <path d="M0 18 L20 16 L40 12 L60 5 L80 2 L100 1" />
+                                </svg>
+                            </td>
+                            <td>Mass Web Commercialization</td>
+                        </tr>
+                        <tr>
+                            <td><span class="mono-text">IPv6</span></td>
+                            <td>1998</td>
+                            <td class="trend-cell">
+                                <svg class="sparkline" viewBox="0 0 100 20">
+                                    <path d="M0 18 L40 17 L60 15 L80 12 L100 8" />
+                                </svg>
+                            </td>
+                            <td>Expanding Address Space</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <footer role="contentinfo">
+            <div class="footer-container">
+                <div class="footer-brand">
+                    <h2 class="hero-title small">Internet History Archive</h2>
+                    <p>Preserving the legacy of the networks that unified the world. An open, high-fidelity educational resource for future digital historians.</p>
+                    
+                    <div class="social-links">
+                        <a href="#" class="social-btn" aria-label="X (Twitter)">
+                            <span class="material-icons-outlined">close</span>
+                        </a>
+                        <a href="#" class="social-btn" aria-label="LinkedIn">
+                            <span class="material-icons-outlined">link</span>
+                        </a>
+                        <a href="mailto:archive@digitalhistory.edu" class="social-btn" aria-label="Email">
+                            <span class="material-icons-outlined">email</span>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="footer-grid-links">
+                    <nav class="footer-nav" aria-label="Footer Sitemap">
+                        <h4>Sitemap</h4>
+                        <ul role="list">
+                            <li><a href="#foundations">Origins & ARPANET</a></li>
+                            <li><a href="#switching">Packet Switching</a></li>
+                            <li><a href="#wars">The Browser Wars</a></li>
+                            <li><a href="#mobile">Mobile Web Revolution</a></li>
+                            <li><a href="#web2">Web 2.0 and Beyond</a></li>
+                            <li><a href="#visual-archive">Visual History Archive</a></li>
+                        </ul>
+                    </nav>
+
+                    <div class="footer-newsletter">
+                        <h4>Newsletter</h4>
+                        <p>Receive quarterly digests on historical digital preservation.</p>
+                        <div class="input-group">
+                            <input type="email" placeholder="Email Address" aria-label="Email for Newsletter">
+                            <button class="arrow-btn" aria-label="Subscribe">
+                                <span class="material-icons-outlined accent-cyan">arrow_forward</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <div class="copyright-text">
+                    <p>© 2024 Archive of Digital History. Public Domain Education.</p>
+                </div>
+                <div class="legal-links">
+                    <a href="#privacy" class="legal-item">Privacy</a>
+                    <span class="separator" aria-hidden="true">|</span>
+                    <a href="#curator" class="legal-item">Curator</a>
+                    <a href="#top" class="back-to-top">
+                        <span class="material-icons-outlined accent-cyan">arrow_upward</span>
+                    </a>
+                </div>
+            </div>
+        </footer>
     </main>
-
-    <hr>
-
-    <footer>
-        <p>&copy; 2024 Internet Engineering Task Force Documentation Archive.</p>
-        <p><a href="#">Back to Top</a></p>
-    </footer>
 
 </body>
 </html>
