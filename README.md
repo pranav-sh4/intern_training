@@ -1,1 +1,1 @@
-The assigned design task using HTML5.
+The assigned design task using HTML5 and CSS.
