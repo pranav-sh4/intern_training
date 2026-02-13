@@ -8,10 +8,7 @@ A high-fidelity, interactive exploration into the origins, rivalries, and archit
 * **Midnight Aesthetic:** A high-contrast palette using `#060B10` (Midnight Black) and `#00D2FF` (Vibrant Cyan).
 * **Atmospheric Depth:** Implementation of fixed **Mesh Gradients** and subtle glows to simulate a deep-space digital environment.
 * **Glassmorphism:** Utilization of `backdrop-filter` blurs and semi-transparent surfaces (`rgba(14, 20, 27, 0.8)`) to create a layered, modern UI.
-* **Typography Hierarchy:**
-* **Serif (Playfair Display):** For high-impact hero titles and section headers.
-* **Sans-Serif (Inter):** For optimized body readability and flow.
-* **Monospace (Fira Code):** For technical metadata, protocols, and spaced kerning effects.
+* **Typography Hierarchy:** Serif (Playfair Display), Sans-Serif (Inter), Monospace (Fira Code)
 
 
 
