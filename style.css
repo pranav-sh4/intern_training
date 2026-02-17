@@ -53,7 +53,6 @@ body {
     line-height: 1.1;
     text-shadow: 0 0 20px rgba(0, 210, 255, 0.4);
     margin: 0 0 20px 0;
-    text-align: center;
 }
 .content-section p{
     text-align: justify;
@@ -71,7 +70,6 @@ strong{
     font-family: 'Fira Code', monospace;
     font-size: 12px;
     color: var(--color-accent);
-    letter-spacing: 2px;
     text-transform: uppercase;
     letter-spacing: 0.25em;
 }
@@ -91,12 +89,44 @@ strong{
     text-shadow: 0 0 10px rgba(0, 210, 255, 0.4);
 }
 
+.section-header, .section-title h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 36px;
+    font-weight: 600;
+    color: var(--text-primary);
+    margin-top: 0;
+    margin-bottom: 30px;
+}
+
+.section-divider {
+    height: 1px;
+    background: linear-gradient(90deg, transparent, var(--color-border), transparent);
+    margin: 8rem 0;
+}
+
+.full-text-block {
+    margin-top: 40px;
+    padding: 30px;
+    border: 2px solid var(--color-border);
+    background: linear-gradient(to right, rgba(0, 210, 255, 0.02), transparent);
+    border-radius: 5%;
+}
+
+.full-text-block h3 {
+    font-family: 'Playfair Display', serif;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 24px;
+    color: var(--text-primary);
+}
+
 /* Table of Contents */
 
 .toc-header{
     font-family: 'Playfair Display', serif;
     color: var(--text-primary);
-    margin-right: 12px;
+    margin-left: auto;
 }
 .toc-card {
     background: var(--color-surface);
@@ -162,50 +192,6 @@ strong{
     background: var(--color-accent); 
     box-shadow: 0 0 10px var(--color-accent);
     transform: scale(1.3);
-}
-
-.glow-link {
-    color: var(--color-accent);
-    text-decoration: none;
-    font-weight: 600;
-    transition: all 0.3s ease;
-    display: inline-block;
-    margin-top: 20px;
-}
-
-.glow-link:hover {
-    text-shadow: 0 0 10px var(--color-accent);
-}
-
-.section-header, .section-title h2 {
-    font-family: 'Playfair Display', serif;
-    font-size: 36px;
-    font-weight: 600;
-    color: var(--text-primary);
-    margin-top: 0;
-    margin-bottom: 30px;
-}
-
-.section-divider {
-    height: 1px;
-    background: linear-gradient(90deg, transparent, var(--color-border), transparent);
-    margin: 8rem 0;
-}
-
-.full-text-block {
-    margin-top: 40px;
-    padding: 30px;
-    border: 2px solid var(--color-border);
-    background: linear-gradient(to right, rgba(0, 210, 255, 0.02), transparent);
-    border-radius: 5%;
-}
-
-.full-text-block h3 {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    font-size: 24px;
-    color: var(--text-primary);
 }
 
 /* Glassmorphism UI */
@@ -358,41 +344,6 @@ strong{
 
 img{
     border-radius: 20%;
-}
-
-.network-graph-placeholder {
-    width: 100%;
-    height: 300px;
-    background: radial-gradient(circle at 50% 50%, rgba(0, 210, 255, 0.05), transparent);
-    border: 1px dashed var(--color-border);
-    border-radius: 8px;
-    margin: 20px 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.cta-container {
-    margin-top: 40px;
-    text-align: center;
-}
-
-.glow-button {
-    background: var(--color-accent);
-    color: var(--color-bg);
-    border: none;
-    padding: 14px 32px;
-    font-family: 'Inter', sans-serif;
-    font-weight: 600;
-    border-radius: 4px;
-    cursor: pointer;
-    box-shadow: 0 0 15px rgba(0, 210, 255, 0.4); 
-    transition: all 0.3s ease; 
-}
-
-.glow-button:hover {
-    transform: scale(1.05);
-    box-shadow: 0 0 25px rgba(0, 210, 255, 0.6);
 }
 
 .split-content {
