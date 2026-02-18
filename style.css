@@ -178,7 +178,7 @@ strong{
     gap: 20px;
 }
 
-.side-bullet-nav .bullet {
+.bullet {
     display: block;
     width: 10px;
     height: 10px;
@@ -188,7 +188,7 @@ strong{
     transition: all 0.3s ease;
 }
 
-.side-bullet-nav a:hover .bullet {
+a:hover .bullet{
     background: var(--color-accent); 
     box-shadow: 0 0 10px var(--color-accent);
     transform: scale(1.3);
