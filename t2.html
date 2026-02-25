@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+    <style>
+        .button-style {
+            background-color: green;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <button id="actionButton">Click Me!</button>
+
+    <script>
+        const button = document.getElementById("actionButton");
+
+        button.addEventListener("click", ()=> {
+            button.textContent = "Text Changed!";
+            button.classList.add("button-style");
+        });
+    </script>
+</body>
+</html>
