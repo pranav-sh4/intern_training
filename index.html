@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Management System</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+    <main>
+        <header class="app-header">
+            <div class="logo-wrapper">
+                <i data-lucide="graduation-cap" class="logo-icon"></i>
+                <h1 class="app-title">Student Management System</h1>
+            </div>
+        </header>
+
+        <div class="app-container">
+            <section class="registration-section">
+                <h2 class="form-title">REGISTER NEW STUDENT</h2>
+                <form class="registration-form" id="studentForm">
+                    <div class="input-group">
+                        <label class="field-label">Full Name</label>
+                        <input type="text" class="text-input" id="nameInput" placeholder="John Doe" required>
+                    </div>
+                    <div class="input-group">
+                        <label class="field-label">Student ID</label>
+                        <input type="text" class="text-input" id="idInput" placeholder="STU-2024-001" required>
+                    </div>
+                    <div class="input-group">
+                        <label class="field-label">Department</label>
+                        <select class="select-input" id="deptInput">
+                            <option value="Computer Science">Computer Science</option>
+                            <option value="Software Engineering">Software Engineering</option>
+                            <option value="Data Science">Data Science</option>
+                            <option value="Information Technology">Information Technology</option>
+                        </select>
+                    </div>
+                    <div class="input-group">
+                        <label class="field-label">Percentage (%)</label>
+                        <input type="number" class="text-input" id="percentInput" placeholder="0-100" min="0" max="100" required>
+                    </div>
+                    <button type="submit" class="primary-button">
+                        <i data-lucide="plus"></i> Add Student
+                    </button>
+                </form>
+            </section>
+
+            <section class="search-section">
+                <i data-lucide="search" class="search-icon"></i>
+                <input type="text" class="search-input" id="searchBar" placeholder="Search student by name, ID or department...">
+            </section>
+
+            <section class="list-section">
+                <div class="table-header">
+                    <span>STUDENT INFO</span>
+                    <span>IDENTITY & DEPARTMENT</span>
+                    <span>PERCENTAGE</span>
+                    <span>STATUS & ACTIONS</span>
+                </div>
+                <div class="scrollable-list" id="studentList"></div>
+                <div class="list-footer">
+                    <span class="footer-section" id="footerStats">Showing 0 of 0 students</span>
+                </div>
+            </section>
+        </div>
+        <footer class="footer-section">
+            <p>© 2024 Student Management System. All rights reserved.</p>
+        </footer>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
